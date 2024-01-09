@@ -11,10 +11,10 @@ import java.util.List;
 public class MongoDBConnector {
     private static final String HOST = "localhost";
     private static final int PORT = 27017;
-    private static final String DATABASE_NAME = "IUM";
+    private static final String DATABASE_NAME = "IUM-Calcio";//Change the name of the database with your name.
 
-    private static MongoClient mongoClient;
-    private static MongoDatabase database;
+    private static final MongoClient mongoClient;
+    private static final MongoDatabase database;
 
     static {
         MongoClientSettings settings = MongoClientSettings.builder()
